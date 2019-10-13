@@ -5,3 +5,4 @@ auto
 *.log
 *.idx
 *.pdf
+*.synctex.gz
