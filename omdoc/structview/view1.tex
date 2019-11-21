@@ -1,0 +1,25 @@
+\documentclass[minimal]{omdoc}
+\usepackage{structview}
+\begin{document}
+\begin{module}[id=foo]
+  \symdef{foo}{}
+\end{module}
+
+\begin{module}[id=bar]
+  \symdef{bar}{}
+\end{module}
+
+% a view local in this file
+\begin{view}{foo}{bar}
+  tast
+%  \fassign{foo}{bar}
+\end{view}
+
+\begin{view}[loadfrom=FOO,loadfrom=BAR]{FOO}{BAR}
+  tost
+\end{view}
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
