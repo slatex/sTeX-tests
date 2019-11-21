@@ -1,4 +1,4 @@
-TEX = $(shell ls *.tex)
+TEX = $(filter-out $(AUX), $(shell ls *.tex))
 PDF = $(TEX:%.tex=%.pdf)
 PDFLATEX = pdflatex -interaction nonstopmode -file-line-error
 
