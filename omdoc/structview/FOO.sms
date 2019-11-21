@@ -1,5 +1,5 @@
 \begin{module}[id=FOO]
-  \symdef{foo}{}
+  \symdef{FOO}{FOO}
 \end{module}
 
 %%% Local Variables:

@@ -1,23 +1,47 @@
 \documentclass[minimal]{omdoc}
 \usepackage{structview}
 \begin{document}
+
 \begin{module}[id=foo]
-  \symdef{foo}{}
+  \symdef{foo}{foo}
 \end{module}
 
 \begin{module}[id=bar]
-  \symdef{bar}{}
+  \symdef{sbar}{bar}
 \end{module}
 
-% a view local in this file
+A view local in this file:
 \begin{view}{foo}{bar}
-  tast
-%  \fassign{foo}{bar}
+  % \fassign{foo}{bar}
+  testing symbolic macros: $\foo = foo$ and $\sbar=bar$
 \end{view}
 
-\begin{view}[loadfrom=FOO,loadfrom=BAR]{FOO}{BAR}
-  tost
+A view that loads modules:
+\begin{view}[loadfrom=FOO,loadto=BAR]{FOO}{BAR}
+  testing symbolic macros: $\FOO = FOO$ and $\BAR=BAR$
 \end{view}
+
+Inline views need to be in a module, so we introduce one with id \texttt{foobar}
+
+\begin{module}[id=foobar] 
+ An inline view environment local in this file:
+\begin{inlineView}{foo}
+%  \fassign{foo}{bar}
+  testing symbolic macros: $\foo = foo$
+\end{inlineView}
+
+An inline view environment that loads modules:
+\begin{inlineView}[loadfrom=FOO]{FOO}
+  testing symbolic macros: $\FOO = FOO$
+\end{inlineView}
+
+An inline view local in this file:
+\inlineview{foo}{testing symbolic macros: $\foo = foo$}
+
+An inline view that loads modules: 
+\inlineview[loadfrom=FOO]{FOO}{testing symbolic macros: $\FOO = FOO$}
+\end{module}
+
 \end{document}
 %%% Local Variables:
 %%% mode: latex
