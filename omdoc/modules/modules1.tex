@@ -8,7 +8,8 @@ A module without module, but creators name that uses other modules
 \begin{module}[creators=miko]
   \usemodule{FOO}
   \usemodule[load=BAR]{BAR}
-  testing usemodule: $\FOO=FOO$, $\BAR=BAR$  
+  testing symdefs from the usemodule: $\FOO=FOO$, $\BAR=BAR$
+  and symbol variants: $\barbarOp=\psi$, $\barbarOp[cap]=\Psi$, $\barbar1=\psi(1)$, $\barbar[cap]1=\Psi(1)$, 
 \end{module}
 
 The symdefs should not escape modules, so we test for them:

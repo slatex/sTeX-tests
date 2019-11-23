@@ -7,7 +7,7 @@
 A structure from this file.
 \begin{module}[id=bar]
 \symdef{bar}{bar}
-A structure local in this file:
+A structure that loads a local theory.
 \begin{sstructure}{name}{FOO}
   \tassign{FOO}{bar}
 \end{sstructure}
@@ -16,7 +16,7 @@ A structure local in this file:
 A structure from this file.
 \begin{module}[id=baz]
 \symdef{baz}{baz}
-A structure local in this file:
+A structure that loads another module
 \begin{sstructure}[load=../modules/FOO]{name}{FOO}
   \tassign{FOO}{baz}
 \end{sstructure}
