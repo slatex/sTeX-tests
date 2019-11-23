@@ -1,2 +1,7 @@
+AUX = localpath.tex
 include ../../make/Makefile.in
+# We generate a file localpath.tex which is needed for the tests.
+pre:
+	@echo "\defpath{MathHub}{`pwd`}\mhcurrentrepos{../mathhub}" >localpath.tex
+
 

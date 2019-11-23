@@ -4,7 +4,7 @@ PDFLATEX = pdflatex -interaction nonstopmode -file-line-error
 
 all: $(PDF)
 
-$(PDF): %.pdf: %.tex 
+$(PDF): %.pdf: %.tex pre
 	$(PDFLATEX) $<  || $(RM) $@
 
 echo:
