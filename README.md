@@ -1,4 +1,4 @@
-# sTeX-tests: Systematic Tests for sTeX
+# sTeX-tests: Systematic Tests for the sTeX Distribution
 
 This repository  contains tests for the
 [sTeX distribution](https://github.com/sLaTeX/sTeX)
@@ -16,6 +16,6 @@ There are two test targets:
 [sTeX package/class](https://github.com/sLaTeX/sTeX/tree/master/sty/): one directory for
 each that contains various `*.tex` files that can be run via the `Makefile` in the
 directory.
-* `make`: Makefile fragments
+* `make`: Makefile fragments for automation
 
 
