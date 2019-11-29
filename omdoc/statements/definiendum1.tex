@@ -1,0 +1,22 @@
+\documentclass[minimal]{omdoc}
+\usepackage{statements}
+\begin{document}
+\begin{module}[id=foomod]
+  \begin{definition}[id=test.one]
+    This \definiendum[name=foo,lemma=bar,recaps=FOO?BAR]{foobar} is very explicit. We can
+    reference it via \termref{foo} or \termref[name=foo]{foobar} or even
+    \termref[name=foo,cd=foomod]{foobar} they should all come out the same.
+  \end{definition}
+
+  \begin{definition}[id=test.two]
+    This \adefi[recaps=FOO?BAR]{foobar}{foo} should give the same result as the
+    definiendum above. Again, we can
+    reference it via \termref{foo} or \termref[name=foo]{foobar} or even
+    \termref[name=foo,cd=foomod]{foobar} they should all come out the same.
+  \end{definition}
+\end{module}
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
