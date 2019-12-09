@@ -7,3 +7,8 @@ auto
 *.idx
 *.pdf
 *.synctex.gz
+*-blx.bib
+*.bbl
+*.bcf
+*.blg
+*.run.xml
