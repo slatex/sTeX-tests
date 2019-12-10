@@ -5,7 +5,7 @@ PDFLATEX = pdflatex -interaction batchmode -file-line-error
 all: $(PDF)
 
 $(PDF): %.pdf: %.tex $< pre
-	$(PDFLATEX) $<  || $(RM) $@
+	$(PDFLATEX) $< 
 
 echo:
 	@echo $(PDF)
