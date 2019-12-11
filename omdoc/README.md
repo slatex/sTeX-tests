@@ -6,7 +6,7 @@ The state of the test in these directories
 * `cmath`: complete
 * `dcm`:
 * `hwexam`:
-* `mathhub`: complete up to `hwexam`
+* `mathhub`: complete
 * `metakeys`:
 * `mikoslides`:
 * `modules`:
