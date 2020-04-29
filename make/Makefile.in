@@ -4,9 +4,9 @@ PDF = $(TEX:%.tex=%.pdf)
 SMS = $(TEX:%.tex=%.sms)
 PDFLATEX = pdflatex -interaction nonstopmode -file-line-error
 
-pdf: $(PDF)
+pdf: sms $(PDF)
 sms: $(SMS)
-all: sms pdf
+all: pdf
 
 $(PDF): %.pdf: %.tex $< sms pre
 	$(PDFLATEX) $< 
