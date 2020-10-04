@@ -1,5 +1,5 @@
 STEXDIR = ../../../..
-AUX = ass1.tex FOO.tex BAR.tex BAZ.tex
 MOD = FOO.tex BAR.tex BAZ.tex
-REPOS = omdoc/21-mathhub
+AUX = $(MOD) ass1.tex prob1.tex
+REPOS = omdoc/otherarchive
 include $(STEXDIR)/test/make/Makefile.in
