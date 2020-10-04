@@ -1,6 +1,5 @@
 \documentclass[minimal]{omdoc}
 \usepackage{smglom}
-\input{localpath}
 \begin{document}
 % adapted from ../modules/view1.tex; see there for ideas. 
 \input{../modules/FOO.tex}
@@ -17,8 +16,13 @@ A structure from outside.
 \begin{module}[id=baz]
 \symdef{baz}{baz}
 A structure that loads another module
-\begin{gstructure}[omdoc/smglom]{name}{BAR}
+\begin{gstructure}{name}{BAR}
   \tassign{FOO}{baz}
+\end{gstructure}
+and another from a different archive
+
+\begin{gstructure}[omdoc/otherarchive]{name}{BAZ}
+  \tassign{BAZ}{baz}
 \end{gstructure}
 \end{module}
 
