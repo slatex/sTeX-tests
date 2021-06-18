@@ -1,5 +1,6 @@
 \documentclass[minimal]{omdoc}
 \usepackage[defindex]{statements}
+\usepackage{hyperref}
 \begin{document}
 \begin{module}[id=foo]
   \begin{definition}[id=test.one]
@@ -7,13 +8,13 @@
 
     This \defi[name=conc]{one} too.
   \end{definition}
-
+\newpage
   \begin{definition}
     This \defii{new}{concept} is defined in terms of the existing \trefi{concept}.
 
     This \defii[name=newconc]{new}{one} is defined in terms of the existing \trefi[?conc]{one}.
   \end{definition}
-
+\newpage
   \begin{definition}
     This \defiii{very}{new}{concept} is defined in terms of the \trefi{concept} and the 
     \trefii{new}{concerpt}. 
@@ -21,7 +22,7 @@
     This \defiii[name=vnconc]{very}{new}{one} is defined in terms of the old
     \trefi[?conc]{one} and the \trefii[?newconc]{new}{one}.
   \end{definition}
-
+\newpage
   \begin{definition}
     This \defiv{absolutely}{completely}{new}{concept} is defined in terms of the
     \trefiii{very}{new}{concept}.
